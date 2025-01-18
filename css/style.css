@@ -1,0 +1,289 @@
+* {
+    font-family: monospace, Helvetica, sans-serif;
+}
+a {
+    text-decoration: none;
+    color: black;
+}
+h1 {
+    margin-bottom: 10px;
+    font-size: 2em;
+    text-align: center;
+}
+h2 {
+    margin-bottom: 20px;
+    font-size: 1.25em;
+    text-align: center;
+}
+h3 {
+    font-size: 1em;
+    margin-bottom: 10px;
+}
+p {
+    font-size: small;
+    text-align: left;
+}
+
+/* <skip to main content> */
+.skip {
+    position: absolute;
+    overflow: hidden;
+    width: 1px;
+    height: 1px;
+    display: block;
+    text-align: center;
+}
+.skip:focus {
+    position: static;
+    overflow: visible;
+    width: auto;
+    height: auto;
+    color: black;
+}
+/* </skip to main content> */
+
+/* <navbar> */
+.nav-container {
+    display: flex;
+    justify-content: space-between;
+    padding: 1rem;
+    align-items: center;
+    font-size: large;
+    background-color: #392F5A;
+}
+.navbar .nav-container a {
+    color: white;
+}
+.navbar .pages {
+    display: none;
+}
+header {
+    position: sticky;
+    top: 0;
+}
+/* </navbar> */
+
+/* <sections> */
+#intro {
+    background-color:mediumslateblue;
+    min-height: 100vh;
+    padding: 15%;
+}
+#about {
+    background-color: #BCA0BC;
+}
+#projects {
+    background-color: #EED7C5;
+}
+#experience {
+    background-color: #C89F9C;
+}
+#skills {
+    background-color: #D3CDD7;
+}
+#contact {
+    background-color: #DDF2EB;
+}
+/* </sections> */
+
+/* <intro> */
+#intro h1 {
+    font-size: 100px;
+}
+.word {
+    margin: auto;
+    color: white;
+    font: 700 normal 2.5em 'tahoma';
+    text-shadow: 5px 2px #222324, 2px 4px #222324, 3px 5px #222324;
+    text-align: center;
+}
+/* <intro> */
+
+/* <about me grid> */
+.about {
+    text-align: center;
+    padding: 40px 20px;
+}
+.about-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 20px;
+    justify-items: center;
+    align-items: center;
+}
+.detail {
+    background-color: white;
+    border: 2px solid white;
+    border-radius: 8px;
+    padding: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s, box-shadow 0.3s;
+    width: 70%;
+    text-align: left;
+}
+.detail img {
+    max-height: 100vh;
+}
+/* </about me grid> */
+
+/* <responsive grids> */
+.projects, .skills, .contact {
+    text-align: center;
+    padding: 40px 20px;
+}
+.project-grid, .contact-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 20px;
+}
+.project, .skill, .sm {
+    background-color: white;
+    border: 2px solid white;
+    border-radius: 8px;
+    padding: 20px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s, box-shadow 0.3s;
+}
+.project:hover, .skill:hover, .sm:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+}
+.sm img {
+    max-height: 60px;
+}
+/* </responsive grids> */
+.flexbox {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    min-height: 200px;
+}
+.button {
+    font-size: small;
+    background-color:aquamarine;
+    border: 2px solid white;
+    border-radius: 8px;
+    padding: 5px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    display: inline-block;
+    margin-top: 10px;
+}
+.project li {
+    margin-bottom: 5px;
+    list-style: circle;
+    text-align: left;
+    font-size: 12px;
+}
+/* <work grid> */
+.work {
+    padding: 40px 20px;
+}
+.work-grid {
+    display: grid;
+    gap: 20px;
+}
+.job {
+    background-color: white;
+    border: 2px solid white;
+    border-radius: 8px;
+    padding: 20px;
+}
+h3 {
+    font-size: large;
+    font-weight: bold;
+}
+h5 {
+    color: #595959;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    font-size: 14px;
+}
+.job li {
+    margin-left: 20px;
+    margin-top: 5px;
+    font-size: 14px;
+    list-style: circle;
+}
+/* </work grid> */
+
+.skill img {
+    max-height: 50px;
+}
+.skills-grid {
+    display: grid;
+    grid-template-columns: repeat( auto-fill, minmax(150px, 1fr) );
+    gap: 20px;
+    justify-items: center;
+    align-items: center;
+}
+
+/* <footer> */
+.footer{
+    background:#5E4C5A;
+    padding: 20px 0px;
+    text-align:center;
+}
+.footer .row{
+    width:100%;
+    margin:1% 0%;
+    padding:0.2% 0%;
+    color:rgb(255, 255, 255);
+    font-size:0.8em;
+}
+.footer .row a{
+    text-decoration:none;
+    transition:0.5s;
+    color: white;
+} 
+.footer .row a:hover{
+    color:#fff;
+    border-style: solid;
+    border-radius: 20%;
+    border-width: 2px;
+    color: white;
+}
+.footer .row ul{
+    width:100%;
+}
+.footer .row ul li{
+    display:inline-block;
+    margin:0px 30px;
+}   
+.footer .row a i{
+    font-size:2em;
+    margin:0% 1%;
+}
+/* </footer> */
+
+/* <desktop view> */
+@media (min-width:768px) {
+    .navbar .pages {
+        box-shadow: none;
+        padding-top: 0px;
+        height: 100%;
+        width: 100%;
+        transform: translate(0);
+        transition: none;
+        display: flex;
+        flex-direction: row;
+        margin-left: 0px;
+        padding-left: 50px;
+        text-align: center;
+        justify-content: space-evenly;
+    }
+    .job-heading img {
+        max-width: 15%;
+        padding-left: 10px;
+        padding-right: 10px;
+    }
+    .job-heading {
+        display: flex;
+        justify-content: flex-start;
+        align-items: center;
+    }
+    .skills-grid {
+        grid-template-columns: repeat( auto-fill, minmax(200px, 1fr) );
+    }
+}
+/* </desktop view> */
