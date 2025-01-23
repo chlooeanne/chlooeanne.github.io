@@ -5,7 +5,7 @@ window.addEventListener("load", function() {
   });
 
 // changing text
-var words = ['Software Engineer.', 'Computer Science Graduate.', 'Problem Solver.', 'Orange Cat Lover.', 'Gamer.', 'MCU Fan.', 'Judoka.'],
+var words = ['Software Engineer.', 'Computer Science Graduate.', 'Problem Solver.', 'Orange Cat Mom.', 'Gamer.', 'MCU Fan.', 'Judoka.', 'Horror Movie Enjoyer.'],
     part,
     i = 0,
     offset = 0,

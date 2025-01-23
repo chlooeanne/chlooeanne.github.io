@@ -157,7 +157,6 @@ header {
     flex-direction: column;
     justify-content: space-between;
     align-items: center;
-    min-height: 200px;
 }
 .button {
     font-size: small;
@@ -284,6 +283,9 @@ h5 {
     }
     .skills-grid {
         grid-template-columns: repeat( auto-fill, minmax(200px, 1fr) );
+    }
+    .flexbox {
+        min-height: 200px;
     }
 }
 /* </desktop view> */
